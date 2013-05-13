@@ -1,0 +1,33 @@
+## java specific
+!.gitignore
+*.iml
+*.iws
+*.ipr
+*.lic
+target
+*/target
+*/*/target
+
+## vim objects
+*.swo
+*.swp
+
+## Build helper scripts
+*.bhs
+
+## Netbeans
+catalog.xml
+nbactions.xml
+
+## IntelliJ IDEA
+*.iml
+*.ipr
+*.iws
+.idea/
+
+## generic files to ignore
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
