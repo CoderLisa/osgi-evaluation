@@ -11,6 +11,8 @@
 
     <modules>
         <module>bundles/maven-bundle-plugin</module>
+        <module>bundles/simple-service</module>
+        <module>bundles/simple-service-user</module>
     </modules>
 
 </project>

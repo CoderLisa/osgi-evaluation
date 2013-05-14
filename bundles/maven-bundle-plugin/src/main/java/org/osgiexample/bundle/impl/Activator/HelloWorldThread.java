@@ -9,7 +9,7 @@ public class HelloWorldThread extends Thread {
 
     public void run() {
         while (running) {
-            System.out.println("Hello World!");
+            System.out.println("Hello World - Built by Maven Bundle Plugin!");
             try {
                 Thread.sleep(2000);
             } catch (InterruptedException e) {
