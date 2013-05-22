@@ -8,15 +8,7 @@
     <groupId>org.osgiexample</groupId>
     <version>1.0-SNAPSHOT</version>
     <packaging>bundle</packaging>
-    <name>OSGI Evaluation - Bundle using maven BDN plugin</name>
-
-    <repositories>
-        <repository>
-            <id>knoplerfish</id>
-            <name>Knoplerfish</name>
-            <url>http://www.knopflerfish.org/maven2</url>
-        </repository>
-    </repositories>
+    <name>HelloWorld</name>
 
     <dependencies>
         <dependency>
@@ -33,8 +25,8 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Export-Package>org.osgiexample</Export-Package>
-                        <Bundle-Activator>org.osgiexample.bundle.impl.Activator.Activator</Bundle-Activator>
+                        <Export-Package>org.osgiexample.mvnbundleplugin</Export-Package>
+                        <Bundle-Activator>org.osgiexample.mvnbundleplugin.HelloWorldActivator</Bundle-Activator>
                     </instructions>
                 </configuration>
             </plugin>    <!-- (2) END -->

@@ -8,15 +8,7 @@
     <artifactId>simple-service-user</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>bundle</packaging>
-    <name>OSGI Evaluation - Bundle of a simple service</name>
-
-    <repositories>
-        <repository>
-            <id>knoplerfish</id>
-            <name>Knoplerfish</name>
-            <url>http://www.knopflerfish.org/maven2</url>
-        </repository>
-    </repositories>
+    <name>Date Service User</name>
 
     <dependencies>
         <dependency>
@@ -33,7 +25,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Bundle-Activator>org.osgiexample.bundle.impl.Activator</Bundle-Activator>
+                        <Bundle-Activator>org.osgiexample.bundle.dateuser.Activator</Bundle-Activator>
                         <Import-Package>org.osgi.framework, org.osgiexample.bundle</Import-Package>
                     </instructions>
                 </configuration>

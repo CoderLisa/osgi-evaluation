@@ -1,4 +1,4 @@
-package org.osgiexample.bundle.impl.Activator;
+package org.osgiexample.mvnbundleplugin;
 
 public class HelloWorldThread extends Thread {
     private boolean running = true;

@@ -8,15 +8,7 @@
     <groupId>org.osgiexample</groupId>
     <version>1.0-SNAPSHOT</version>
     <packaging>bundle</packaging>
-    <name>OSGI Evaluation - Bundle of a simple service</name>
-
-    <repositories>
-        <repository>
-            <id>knoplerfish</id>
-            <name>Knoplerfish</name>
-            <url>http://www.knopflerfish.org/maven2</url>
-        </repository>
-    </repositories>
+    <name>Date Service Impl</name>
 
     <dependencies>
         <dependency>

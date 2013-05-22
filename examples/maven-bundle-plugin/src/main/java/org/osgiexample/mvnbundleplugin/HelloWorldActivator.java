@@ -1,4 +1,4 @@
-package org.osgiexample.bundle.impl.Activator;
+package org.osgiexample.mvnbundleplugin;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;

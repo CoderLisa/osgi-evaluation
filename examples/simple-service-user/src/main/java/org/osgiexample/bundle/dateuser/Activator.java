@@ -1,4 +1,4 @@
-package org.osgiexample.bundle.impl;
+package org.osgiexample.bundle.dateuser;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
@@ -27,7 +27,6 @@ public class Activator implements BundleActivator {
         System.out.println("Using DateService: formatting date: " + service.getFormattedDate(new Date()));
 
         bundleContext.registerService(DateService.class.getName(), service, new Hashtable());
-
         bundleContext.ungetService(reference);
     }
 
