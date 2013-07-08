@@ -9,11 +9,12 @@ public class ServletActivator implements BundleActivator {
 
     public void start(BundleContext context) throws Exception
     {
+        System.out.println("registering the simple servlet");
         ServiceReference sRef = context.getServiceReference(HttpService.class.getName());
         if (sRef != null)
         {
             HttpService service = (HttpService) context.getService(sRef);
-            service.registerServlet("/*", new SimpleServlet(), null, null);
+            service.registerServlet("/", new SimpleServlet(), null, null);
         }
     }
 
