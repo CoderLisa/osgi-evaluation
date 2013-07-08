@@ -46,8 +46,7 @@
                 <configuration>
                     <instructions>
                         <Export-Package>org.osgiexample.filters.helloworld</Export-Package>
-                        <!--Bundle-Activator>org.osgiexample.filters.helloworld.HelloWorldActivator</Bundle-Activator-->
-                        <Bundle-SymbolicName>${pom.artifactId}</Bundle-SymbolicName>
+                        <Bundle-Activator>org.osgiexample.filters.helloworld.HelloWorldActivator</Bundle-Activator>
                     </instructions>
                 </configuration>
             </plugin>    <!-- (2) END -->

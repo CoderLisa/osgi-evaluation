@@ -1,13 +1,9 @@
 package org.osgiexample.filters.helloworld;
 
-import org.apache.felix.http.api.ExtHttpService;
-import org.osgi.framework.BundleContext;
-import org.osgi.framework.ServiceReference;
 import org.osgiexample.bundle.DateService;
 
 import java.io.IOException;
 import java.util.Date;
-import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
@@ -20,13 +16,8 @@ public class HelloWorldFilter implements javax.servlet.Filter {
 
     DateService dateService;
 
-    public HelloWorldFilter(BundleContext ctx) throws ServletException {
-        ServiceReference sRef = ctx.getServiceReference(ExtHttpService.class.getName());
-        if (sRef != null)
-        {
-            ExtHttpService service = (ExtHttpService) ctx.getService(sRef);
-            service.registerFilter(this, ".*", null, 0, null);
-        }
+    public HelloWorldFilter(DateService dateService) throws ServletException {
+        this.dateService = dateService;
     }
 
     @Override
@@ -36,9 +27,7 @@ public class HelloWorldFilter implements javax.servlet.Filter {
         Date now = new Date();
 
         chain.doFilter(request, response);
-        response.getWriter().write("Hello World\n" +
-                dateService.getFormattedDate(now));
-
+        response.getWriter().write("Hello World.  Today is: " + dateService.getFormattedDate(now));
     }
 
     @Override
