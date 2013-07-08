@@ -8,6 +8,6 @@ import java.util.Date;
 public class DateServiceImpl implements DateService {
     @Override
     public String getFormattedDate(Date date) {
-        return DateFormat.getDateInstance(DateFormat.SHORT).format(date);
+        return DateFormat.getDateInstance(DateFormat.FULL).format(date);
     }
 }

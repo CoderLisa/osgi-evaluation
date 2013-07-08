@@ -12,5 +12,7 @@ public final class SimpleServlet extends HttpServlet {
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("handling the request");
         resp.addHeader("WIZARD", "JAWSOME");
+
+
     }
 }
