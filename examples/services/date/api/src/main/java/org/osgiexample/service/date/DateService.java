@@ -1,4 +1,4 @@
-package org.osgiexample.bundle;
+package org.osgiexample.service.date;
 
 import java.util.Date;
 

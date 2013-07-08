@@ -1,8 +1,6 @@
 package org.osgiexample.filters.helloworld;
 
-import org.apache.felix.http.api.ExtHttpService;
-import org.osgi.service.http.HttpService;
-import org.osgiexample.service.date.DateService;
+import org.osgiexample.bundle.DateService;
 
 import java.io.IOException;
 import java.util.Date;
@@ -13,15 +11,14 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 
 
+
 public class HelloWorldFilter implements javax.servlet.Filter {
 
     DateService dateService;
-    ExtHttpService httpService;
 
-    public void startup() throws ServletException {
-        httpService.registerFilter(this, ".*", null, 0, null);
+    public HelloWorldFilter(DateService dateService) throws ServletException {
+        this.dateService = dateService;
     }
-
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
@@ -30,8 +27,7 @@ public class HelloWorldFilter implements javax.servlet.Filter {
         Date now = new Date();
 
         chain.doFilter(request, response);
-        response.getWriter().write("Hello World\n" +
-                dateService.getFormattedDate(now));
+        response.getWriter().write("Hello World.  Today is: " + dateService.getFormattedDate(now));
     }
 
     @Override
