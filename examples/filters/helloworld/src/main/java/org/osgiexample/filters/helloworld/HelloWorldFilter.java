@@ -1,6 +1,6 @@
 package org.osgiexample.filters.helloworld;
 
-import org.osgiexample.bundle.DateService;
+import org.osgiexample.service.date.DateService;
 
 import java.io.IOException;
 import java.util.Date;

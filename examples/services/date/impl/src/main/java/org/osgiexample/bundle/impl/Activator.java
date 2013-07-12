@@ -3,7 +3,7 @@ package org.osgiexample.bundle.impl;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.Constants;
-import org.osgiexample.bundle.DateService;
+import org.osgiexample.service.date.DateService;
 
 import java.util.Hashtable;
 

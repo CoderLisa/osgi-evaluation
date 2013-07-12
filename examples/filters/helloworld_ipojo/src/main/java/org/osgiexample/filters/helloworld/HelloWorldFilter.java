@@ -18,7 +18,7 @@ import javax.servlet.ServletResponse;
 
 public class HelloWorldFilter implements javax.servlet.Filter {
 
-    DateService dateService;
+    private DateService dateService;
 
     public HelloWorldFilter(BundleContext ctx) throws ServletException {
         ServiceReference sRef = ctx.getServiceReference(ExtHttpService.class.getName());

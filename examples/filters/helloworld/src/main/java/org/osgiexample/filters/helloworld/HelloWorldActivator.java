@@ -4,7 +4,7 @@ import org.apache.felix.http.api.ExtHttpService;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceReference;
-import org.osgiexample.bundle.DateService;
+import org.osgiexample.service.date.DateService;
 
 public class HelloWorldActivator implements BundleActivator {
     @Override

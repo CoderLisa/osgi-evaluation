@@ -1,6 +1,7 @@
 package org.osgiexample.bundle.impl;
 
-import org.osgiexample.bundle.DateService;
+
+import org.osgiexample.service.date.DateService;
 
 import java.text.DateFormat;
 import java.util.Date;

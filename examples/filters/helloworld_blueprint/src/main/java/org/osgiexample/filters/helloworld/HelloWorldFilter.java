@@ -1,7 +1,6 @@
 package org.osgiexample.filters.helloworld;
 
 import org.apache.felix.http.api.ExtHttpService;
-import org.osgi.service.http.HttpService;
 import org.osgiexample.service.date.DateService;
 
 import java.io.IOException;
@@ -19,7 +18,9 @@ public class HelloWorldFilter implements javax.servlet.Filter {
     ExtHttpService httpService;
 
     public void startup() throws ServletException {
+        System.out.println("registering helloworld blueprint filter");
         httpService.registerFilter(this, ".*", null, 0, null);
+        System.out.println("httpService is " + httpService);
     }
 
 
@@ -40,5 +41,6 @@ public class HelloWorldFilter implements javax.servlet.Filter {
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
+        System.out.println("init helloworld blueprint filter");
     }
 }

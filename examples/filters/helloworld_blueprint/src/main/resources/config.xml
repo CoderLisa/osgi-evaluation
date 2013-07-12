@@ -1,7 +1,7 @@
 <blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
     <reference id="dateService" interface="org.osgiexample.service.date" />
 
-    <reference id="extHttpService" interface="org.apache.felix.http.api.ExtHttpService"/>
+    <reference id="httpService" interface="org.apache.felix.http.api.ExtHttpService"/>
 
     <bean id="helloWorldFilter" class="org.osgiexample.filters.helloworld.HelloWorldFilter"
             init-method="startup">

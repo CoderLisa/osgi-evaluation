@@ -28,7 +28,7 @@
         </dependency>
         <dependency>
             <groupId>org.osgiexample</groupId>
-            <artifactId>simple-service</artifactId>
+            <artifactId>date-service-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
             <dependency>
