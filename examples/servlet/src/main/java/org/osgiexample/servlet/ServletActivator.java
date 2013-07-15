@@ -15,7 +15,9 @@ public class ServletActivator implements BundleActivator {
         {
             HttpService service = (HttpService) context.getService(sRef);
             service.registerServlet("/", new SimpleServlet(), null, null);
+            System.out.println("httpService is " + service);
         }
+
     }
 
     @Override
