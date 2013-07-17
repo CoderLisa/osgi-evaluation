@@ -15,11 +15,12 @@
 
         <module>examples/services/date/api</module>
         <module>examples/services/date/impl</module>
-        <module>examples/services/date/impl-blueprint</module>
+
+        <module>examples/wiring</module>
+
         <module>examples/services/date/client</module>
 
         <module>examples/filters/helloworld</module>
-        <module>examples/filters/helloworld_blueprint</module>
         <module>examples/filters/helloworld_ipojo</module>
 
         <module>examples/servlet</module>

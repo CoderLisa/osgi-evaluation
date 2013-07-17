@@ -4,9 +4,6 @@ import org.apache.felix.http.api.ExtHttpService;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceReference;
-import org.osgi.service.http.HttpService;
-
-import javax.servlet.http.HttpServlet;
 
 public class HelloWorldActivator implements BundleActivator {
     @Override

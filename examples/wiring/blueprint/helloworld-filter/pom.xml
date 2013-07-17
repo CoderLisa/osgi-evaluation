@@ -40,7 +40,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Export-Package>org.osgiexample.filters.helloworld</Export-Package>
+                        <Export-Package>org.osgiexample.blueprint.filters.helloworld</Export-Package>
                         <Bundle-SymbolicName>${pom.artifactId}</Bundle-SymbolicName>
                     </instructions>
                 </configuration>

@@ -3,7 +3,6 @@ package org.osgiexample.filters.helloworld;
 import org.apache.felix.http.api.ExtHttpService;
 import org.osgi.service.http.NamespaceException;
 import org.osgiexample.service.date.DateService;
-import org.osgiexample.servlet.SimpleServlet;
 
 import java.io.IOException;
 import java.util.Date;
