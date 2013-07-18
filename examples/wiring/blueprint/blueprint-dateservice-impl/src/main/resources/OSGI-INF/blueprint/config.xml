@@ -1,4 +1,0 @@
-<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
-    <bean id="dateService" class="org.osgiexample.service.date.DateServiceImpl" />
-    <service ref="dateService" interface="org.osgiexample.service.date.DateService" />
-</blueprint>

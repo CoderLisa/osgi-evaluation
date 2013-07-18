@@ -11,9 +11,17 @@
     <name>OSGi Examples - Wiring with Blueprint</name>
 
     <modules>
-        <module>blueprint-dateservice-api</module>
-        <module>blueprint-dateservice-impl</module>
+        <module>dateservice-api</module>
+        <module>dateservice-impl</module>
         <module>helloworld-filter</module>
     </modules>
+
+    <dependencies>
+        <dependency>
+        	<groupId>org.slf4j</groupId>
+        	<artifactId>slf4j-simple</artifactId>
+        	<version>1.7.5</version>
+        </dependency>
+    </dependencies>
 
 </project>
