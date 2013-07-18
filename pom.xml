@@ -8,22 +8,12 @@
     <artifactId>osgi-example</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <name>OSGi Examples</name>
 
     <modules>
         <module>examples/embedded-osgi</module>
         <module>examples/maven-bundle-plugin</module>
-
-        <module>examples/services/date/api</module>
-        <module>examples/services/date/impl</module>
-
         <module>examples/wiring</module>
-
-        <module>examples/services/date/client</module>
-
-        <module>examples/filters/helloworld</module>
-        <module>examples/filters/helloworld_ipojo</module>
-
-        <module>examples/servlet</module>
     </modules>
 
 </project>
